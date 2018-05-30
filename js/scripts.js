@@ -20,4 +20,14 @@ $(document).ready(function() {
 
     event.preventDefault();
   });
+
+  $("#letter").submit(function(event) {
+    var fullnameInput = $("input#fullname").val();
+
+    $(".fullname").text(fullnameInput);
+
+    $("#story").show();
+
+    event.preventDefault();
+  });
 });
